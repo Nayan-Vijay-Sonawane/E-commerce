@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance e-commerce | About Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="Images/logo.png" alt="logo" width="120"
+        /></a>
+      </div>
+      <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login/Register</a>
+      </div>
+    </nav>
+    <div class="about_us">
+      <h2 class="heading">About Us</h2>
+      <div class="about_content">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus,
+          reiciendis rerum non nobis earum adipisci, magnam nesciunt ad
+          voluptatibus cumque soluta rem nisi eveniet. Magni sed perspiciatis
+          amet voluptatum tempore fuga! Dolores quis dicta voluptatem quae,
+          voluptas, odit, quisquam magnam maiores sunt expedita cumque
+          debitis?Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Eveniet minus numquam nisi voluptas inventore animi doloremque placeat
+          doloribus possimus repudiandae. Nulla voluptate nesciunt reiciendis
+          aut sunt nihil possimus autem quaerat perferendis amet, quo itaque.
+        </p>
+      </div>
+      <br />
+      <hr />
+      <h2 class="heading">Our Mission</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim illo
+        reprehenderit ex ullam cumque, eius necessitatibus inventore quidem rem
+        labore, placeat veniam quae asperiores iste praesentium vitae? Quod
+        sequi iste ratione numquam voluptatum magni beatae corporis qui dolor
+        rerum assumenda, deserunt, quam repudiandae accusamus illum. Lorem,
+        ipsum dolor sit amet consectetur adipisicing elit. Molestiae maxime
+        ipsum nemo, in atque qui tenetur! Cum, similique! Ea sapiente inventore
+        beatae vel dolorem pariatur, deleniti delectus libero et cupiditate!
+      </p>
+    </div>
+
+    <div class="feed">
+      <h2 class="heading">Write A Review</h2>
+      <div class="feed_form">
+        <form name="submit-googlesheet">
+          <input type="text" name="Name" placeholder="Name" /><br />
+          <input type="email" name="Email" placeholder="Email ID" /><br />
+          <input
+            type="number"
+            name="Number"
+            placeholder="Contact Number"
+          /><br />
+          <textarea
+            name="Review"
+            placeholder="Write Your Review"
+            cols="7"
+            rows="5"
+          ></textarea
+          ><br />
+          <button type="submit" class="m_btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="f_logo">
+        <a href="index.html"
+          ><img src="Images/logo.png" alt="logo" width="80"
+        /></a>
+      </div>
+
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a> |
+        <a href="services.html">Services</a> | <a href="blogs.html">Blogs</a> |
+        <a href="login.html">Login</a> |
+        <a href="login.html">Sign Up</a>
+      </div>
+
+      <div class="doc">
+        <h3>Documents</h3>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a> |
+        <a href="#">Refund Policy</a>
+      </div>
+
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.whatsapp.com/send?phone+917777777777"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="tel: +917777777777"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto: dummy@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+      <hr />
+      <p>Copyright &copy; 2021. All Rights Reserved</p>
+    </footer>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwikxRxih6Zaz-pkE6Ho_Mi1de_Ux7Pi8te8DKdFQbJVne-S4hax7OlKKAUBFmTO4-z4Q/exec";
+      const form = document.forms["submit-googlesheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => alert("Thank you for your feedback"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
