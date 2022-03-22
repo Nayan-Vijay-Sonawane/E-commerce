@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advance e-commerce | Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="nav nav_top">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="Images/logo.png" alt="logo" width="120"
+        /></a>
+      </div>
+      <div class="nav_side">
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="login.html">Login/Register</a>
+      </div>
+    </nav>
+
+    <div class="contact_container">
+      <h2 class="heading">Contact Us</h2>
+      <div class="g_map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.4264855817814!2d73.75599781420595!3d18.644848370229347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9f1ca8dab03%3A0x6237cfbd36f9acf9!2sD.Y.%20Patil%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1641623755219!5m2!1sen!2sin"
+          width="100%"
+          height="600"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact_content">
+        <p><b>Address: Pune, India</b></p>
+        <p><b>Call: +91 9898989898</b></p>
+        <p><b>Mail: dummy@gmail.com</b></p>
+      </div>
+    </div>
+
+    <div class="feed">
+      <h2 class="heading">Write A Review</h2>
+      <div class="feed_form">
+        <form name="submit-googlesheet">
+          <input type="text" name="Name" placeholder="Name" /><br />
+          <input type="email" name="Email" placeholder="Email ID" /><br />
+          <input
+            type="number"
+            name="Number"
+            placeholder="Contact Number"
+          /><br />
+          <textarea
+            name="Review"
+            placeholder="Write Your Review"
+            cols="7"
+            rows="5"
+          ></textarea
+          ><br />
+          <button type="submit" class="m_btn">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="f_logo">
+        <a href="index.html"
+          ><img src="image/logo.png" alt="logo" width="80"
+        /></a>
+      </div>
+
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="about.html">About Us</a> |
+        <a href="services.html">Services</a> | <a href="blogs.html">Blogs</a> |
+        <a href="login.html">Login</a> |
+        <a href="login.html">Sign Up</a>
+      </div>
+
+      <div class="doc">
+        <h3>Documents</h3>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms Of Use</a> |
+        <a href="#">Refund Policy</a>
+      </div>
+
+      <div class="social">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <a href="https://api.whatsapp.com/send?phone+917777777777"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="tel: +917777777777"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto: dummy@gmail.com"><i class="far fa-envelope"></i></a>
+      </div>
+      <hr />
+      <p>Copyright &copy; 2021. All Rights Reserved</p>
+    </footer>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwikxRxih6Zaz-pkE6Ho_Mi1de_Ux7Pi8te8DKdFQbJVne-S4hax7OlKKAUBFmTO4-z4Q/exec";
+      const form = document.forms["submit-googlesheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => alert("Thank you for your feedback"))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
