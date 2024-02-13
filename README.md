@@ -1,8 +1,6 @@
-# E-commerce
-Advanced E-Commerce Website
 # E-Commerce Website Project
 
-This project is an E-Commerce Website developed using HTML, CSS, Bootstrap, and JavaScript. It includes various sections such as About Us, Services, Blogs, Contact Us, and Login/Register.
+This project is an Advanced E-Commerce Website developed using HTML, CSS, Bootstrap, and JavaScript. It includes various sections such as About Us, Services, Blogs, Contact Us, and Login/Register.
 
 ## About Us
 
@@ -39,7 +37,7 @@ The Login/Register section provides users with the option to create an account o
 
 ## Contributors
 
-- [Your Name](https://github.com/yourusername) - Project Developer
+- [Nayan Sonawane](https://github.com/Nayan-Vijay-Sonawane) - Project Developer
 
 ## License
 
