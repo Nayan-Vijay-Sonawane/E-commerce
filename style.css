@@ -161,11 +161,17 @@
   text-align: center;
 }
 
-.product .product_container .item .item_content h3,
+.product .product_container .item .item_content h3{
+  padding: 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  font-weight:600;
+}
 .product .product_container .item .item_content p {
   padding: 10px;
   font-size: 25px;
-  font-family: cosmic, sans-serif;
+  font-family: sans-serif;
+  /* font-weight:700; */
 }
 
 .product .product_container .item .item_content p {
