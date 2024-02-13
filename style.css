@@ -34,7 +34,7 @@
   color: black;
   font-weight: bold;
   font-family:sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   /* justify-content: center;
   align-items: center;
   align-content: center;
@@ -127,11 +127,12 @@
 }
 
 .heading {
-  color: black;
+  color: rgb(70, 58, 58);
   font-size: 2rem;
+  font-weight:550;
   text-align: center;
   padding: 1rem;
-  font-family: cosmic, sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-transform: uppercase;
 }
 
