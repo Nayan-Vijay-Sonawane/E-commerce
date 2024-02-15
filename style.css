@@ -294,7 +294,8 @@
 
 .team .team_container .team_video video {
   width: 100%;
-  border: 10px solid orange;
+  border: 5px solid orange;
+  border: radius 2px;
 }
 
 .feed {
